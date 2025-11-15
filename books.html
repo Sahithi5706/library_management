@@ -1,0 +1,18 @@
+<h2>Available Books</h2>
+
+<table border="1">
+    <tr>
+        <th>Title</th><th>Author</th><th>Category</th><th>Available</th>
+    </tr>
+
+    {% for b in books %}
+    <tr>
+        <td>{{b.title}}</td>
+        <td>{{b.author}}</td>
+        <td>{{b.category_name}}</td>
+        <td>{{b.available}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/student_dashboard">Back</a>

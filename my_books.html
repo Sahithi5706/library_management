@@ -1,0 +1,17 @@
+<h2>Books You Borrowed</h2>
+
+<table border="1">
+<tr>
+    <th>Title</th><th>Author</th><th>Date</th>
+</tr>
+
+{% for b in data %}
+<tr>
+    <td>{{b.title}}</td>
+    <td>{{b.author}}</td>
+    <td>{{b.borrow_date}}</td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/student_dashboard">Back</a>
